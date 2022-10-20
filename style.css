@@ -1,0 +1,181 @@
+/* task_1 */
+.task1 {
+    display: block;
+    width: 500px;
+    height: 100px;
+    background: white;
+    border: 1px red solid;
+}
+.task1:hover {
+    background: red;
+    transition: 2s;
+}
+/* task_2 */
+.task2 {
+    width: 500px;
+    height: 100px;
+    background: white;
+    color: red;
+    border: 1px red solid;
+}
+.text2 {
+    color: red;
+}
+.task2:hover {
+    background: red;
+    color: white;
+    transition: 2s;
+}
+.band {
+    width: 32%;
+    height: 50px;
+    background: white;
+    border: 1px red solid;
+}
+  
+.task3:hover {
+    width: 97%;
+    transition: 2s;
+}
+.task4 {
+    font-size: 14px;
+    color: red;
+}
+.task4:hover {
+    width: 97%;
+    font-size: 30px;
+    transition: 2s;
+    
+}
+
+.task5:hover {
+    width: 60%;
+    transform: translateX(30%);
+    transition: 2s;
+}
+.wband.task6 {
+    margin-left: 30px;
+}
+.wband {
+    margin-left: 2%;
+    width: 32%;
+    height: 50px;
+    background: none;
+    border: 1px red solid;
+
+}
+.box6 {
+    width: 65%;
+    margin-right: 20%;
+    overflow-x: hidden;
+
+}
+.fly {
+    width: 140%;
+    margin: 15px;
+    margin-left: 1800px;
+}
+.task6:hover .fly {
+    
+    text-align: left;
+    line-height: 15px;
+    margin-left: 40%;
+    transition: 2s;
+}
+
+
+.task7:hover {
+    width: 97%;
+    transition: 3s;
+    transition-delay: 1s;
+    
+}
+.task8 {
+    display: flex;
+    width: 370px;
+    height: 40px;
+    /* transition: 2s; */
+}
+input:focus {
+    transform: scale(150% 0);
+    width: 130%;
+    outline: 1px solid black;
+    border: 5px;
+    box-shadow: 0 0 5px black;
+    transition: all 1s ease-out
+
+}
+.wrap {
+    border: 1px solid green;
+    padding: 30px;
+    padding-left: 90px;
+}
+.band {
+    height: 30px;
+    width: 250px;
+    margin: 30px;
+}
+.wrap:hover .band {
+    width: 90%;
+    transition: 2s;
+}
+.task10 .band:hover +.band {
+    /* background: green; */
+    width: 70%;
+    transition: 2s;
+}
+.task11 .band:hover ~.band {
+    /* background: green; */
+    width: 70%;
+    transition: 2s;
+}
+.task12 .band:hover +.band {
+    /* background: green; */
+    width: 70%;
+    transition: 2s;
+}
+.wrap13 {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.task13 {
+    width: 450px;
+    height: 30px;
+    padding: 15px;
+    margin-left: 15%;
+
+}
+.prompt {
+    width: 250px;
+    height: 25px;
+    background: rgb(219, 74, 74);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 800px;
+}
+.task13:hover +.prompt{
+    margin-right: 320%;
+    translate: 800px;
+    transition: 1s;
+} 
+.task14 {
+    margin-top: 15px;
+}
+.wrap18 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 200px;
+    border: 1px solid green;
+}
+.task18 {
+    width: 100px;
+    height: 50px;
+    border: 1px solid red;
+}
