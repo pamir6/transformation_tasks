@@ -5,6 +5,7 @@
     height: 100px;
     background: white;
     border: 1px red solid;
+    transition: 2s;
 }
 .task1:hover {
     background: red;
@@ -17,35 +18,50 @@
     background: white;
     color: red;
     border: 1px red solid;
+    transition: 2s;
 }
 .text2 {
     color: red;
+    transition: 2s;
 }
 .task2:hover {
     background: red;
     color: white;
     transition: 2s;
 }
-.band {
+/* task_3 */
+.task3 {
     width: 32%;
     height: 50px;
     background: white;
     border: 1px red solid;
-}
-  
+    transition: 2s;
+} 
+
 .task3:hover {
     width: 97%;
     transition: 2s;
 }
+/* task_4 */
 .task4 {
     font-size: 14px;
     color: red;
+    transition: 2s;
 }
+
 .task4:hover {
     width: 97%;
     font-size: 30px;
     transition: 2s;
     
+}
+/* task5 */
+.task5 {
+    width: 32%;
+    height: 50px;
+    background: white;
+    border: 1px red solid;
+    transition: 2s;
 }
 
 .task5:hover {
@@ -53,6 +69,7 @@
     transform: translateX(30%);
     transition: 2s;
 }
+/* task6 */
 .wband.task6 {
     margin-left: 30px;
 }
@@ -62,7 +79,7 @@
     height: 50px;
     background: none;
     border: 1px red solid;
-
+    transition: 2s;
 }
 .box6 {
     width: 65%;
@@ -74,6 +91,7 @@
     width: 140%;
     margin: 15px;
     margin-left: 1800px;
+    transition: 2s; 
 }
 .task6:hover .fly {
     
@@ -83,57 +101,74 @@
     transition: 2s;
 }
 
-
+/* task7 */
 .task7:hover {
     width: 97%;
     transition: 3s;
     transition-delay: 1s;
     
 }
+/* task8 */
 .task8 {
-    display: flex;
     width: 370px;
     height: 40px;
-    /* transition: 2s; */
+    padding-left: 30px;
+    transition: 2s;
+    background: rgb(243, 165, 165);
 }
+input {
+    transition: 1s
+    }
 input:focus {
-    transform: scale(150% 0);
-    width: 130%;
-    outline: 1px solid black;
-    border: 5px;
-    box-shadow: 0 0 5px black;
-    transition: all 1s ease-out
-
+    width: 98%;
+    outline: 2px solid black;
+    border: 1px solid black;
+    box-shadow: 2px 0 5px black;
+    transition: 1s 
 }
+
+/* task9 */
 .wrap {
     border: 1px solid green;
     padding: 30px;
-    padding-left: 90px;
+    padding-left: 20px;
 }
+
 .band {
     height: 30px;
     width: 250px;
     margin: 30px;
+    width: 32%;
+    height: 50px;
+    background: white;
+    border: 1px red solid;
+    transition: 2s;
 }
 .wrap:hover .band {
     width: 90%;
     transition: 2s;
 }
+/* task10 */
 .task10 .band:hover +.band {
-    /* background: green; */
     width: 70%;
     transition: 2s;
 }
+/* task11 */
 .task11 .band:hover ~.band {
-    /* background: green; */
     width: 70%;
     transition: 2s;
 }
-.task12 .band:hover +.band {
-    /* background: green; */
+/* task12 */
+.task12 {
+    width: 1550px;
+    height: 700px;
+    border: 1px solid blue;
+}
+.task12:hover div {
     width: 70%;
     transition: 2s;
 }
+/* task13 */
 .wrap13 {
     width: 500px;
     display: flex;
@@ -146,7 +181,6 @@ input:focus {
     height: 30px;
     padding: 15px;
     margin-left: 15%;
-
 }
 .prompt {
     width: 250px;
@@ -163,19 +197,83 @@ input:focus {
     translate: 800px;
     transition: 1s;
 } 
-.task14 {
-    margin-top: 15px;
+/* task14 */
+.wrap14 {
+    width: 500px;
+    height: 118px;
+    margin-left: 30px;
+    margin-bottom: 15px;
 }
+.wrap14 .task14 {
+    margin: 0;
+    transition: 3s;
+}
+.wrap14 .task14 {
+    margin-bottom: 15px;
+}
+
+.wrap14:hover .task14:first-child {
+    width: 100%;
+    transition: 3s;
+    transition-timing-function: steps(6, start);
+}
+.wrap14:hover .task14:nth-child(2) {
+    width: 100%;
+    transition: 3s;
+    transition-delay: 0.5s;
+    transition-timing-function: steps(6, start);
+}
+/* task15 */
+.task15:hover {
+    width: 97%;
+    transition: 3s cubic-bezier(.20,-0.4,0,.81);
+}
+/* task16 */
+.indicator {
+    width: 100%;
+    height: 50px;
+    background: red;
+    translate: -502px;
+    
+}
+.task16 {
+    overflow: hidden;
+}
+
+.task16:hover .indicator {
+    translate: 0;
+    transition: 3s;
+}
+/* task17 */
+.task17 {
+    overflow: hidden;
+}
+.task17:hover .indicator {
+    translate: 0;
+    transition: 3s;
+    transition-timing-function: steps(8, start);
+}
+    /* task18 */
 .wrap18 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 500px;
-    height: 200px;
-    border: 1px solid green;
+    height: 300px;
+    margin-left: 30px;
+    /* border: 1px solid green; */
+    
 }
 .task18 {
     width: 100px;
     height: 50px;
     border: 1px solid red;
+    margin-left: 200px;
+    box-shadow: -100px 80px 0px red, 100px -80px 0px black;
+    transition: 2s;
 }
+.task18:hover {
+    box-shadow: 100px 80px 0px black, 100px 80px 0px black;
+    transition: 2s;
+}
+
